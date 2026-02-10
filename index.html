@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Quiz Application - CSC4035">
+    <title>Quiz App - CSC4035</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--
+    ============================================================
+    ASSIGNMENT 2: INTERACTIVE QUIZ APPLICATION
+    CSC4035 Web Programming and Technologies
+
+    Instructions:
+    1. Complete the TODO sections in the JavaScript files
+    2. Add your questions to data/questions.json
+    3. Do NOT modify this HTML structure significantly
+    4. All content should be generated dynamically via JavaScript
+    ============================================================
+    -->
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="quiz-header">
+            <h1>Web Development Quiz</h1>
+            <p>Test your knowledge of HTML, CSS, and JavaScript</p>
+        </header>
+
+        <!-- Quiz Container -->
+        <main id="quiz-container" class="quiz-container">
+            <!-- Start Screen (shown initially) -->
+            <div id="start-screen" class="screen">
+                <h2>Ready to Test Your Skills?</h2>
+                <p>This quiz contains questions about web development fundamentals.</p>
+                <ul class="quiz-info">
+                    <li><span id="question-count">10</span> Questions</li>
+                    <li>Multiple Choice</li>
+                    <li>No Time Limit</li>
+                </ul>
+                <button id="start-btn" class="btn btn-primary">Start Quiz</button>
+            </div>
+
+            <!-- Question Screen (shown during quiz) -->
+            <div id="question-screen" class="screen hidden">
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <span id="progress-text" class="progress-text">Question 1 of 10</span>
+                </div>
+
+                <!-- Question Content -->
+                <div id="question-content" class="question-content">
+                    <h2 id="question-text" class="question-text">
+                        <!-- Question text will be inserted here -->
+                    </h2>
+                    <div id="options-container" class="options-container">
+                        <!-- Answer options will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="navigation">
+                    <button id="prev-btn" class="btn btn-secondary" disabled>Previous</button>
+                    <button id="next-btn" class="btn btn-primary" disabled>Next</button>
+                    <button id="submit-btn" class="btn btn-success hidden">Submit Quiz</button>
+                </div>
+            </div>
+
+            <!-- Results Screen (shown after quiz completion) -->
+            <div id="results-screen" class="screen hidden">
+                <h2>Quiz Complete!</h2>
+                <div id="score-display" class="score-display">
+                    <div class="score-circle">
+                        <span id="score-percentage">0%</span>
+                    </div>
+                    <p id="score-text">You scored 0 out of 10</p>
+                    <p id="score-message" class="score-message">
+                        <!-- Performance message will be inserted here -->
+                    </p>
+                </div>
+
+                <!-- Answer Review -->
+                <div id="answer-review" class="answer-review">
+                    <h3>Review Your Answers</h3>
+                    <div id="review-container">
+                        <!-- Answer review will be inserted here -->
+                    </div>
+                </div>
+
+                <button id="restart-btn" class="btn btn-primary">Try Again</button>
+            </div>
+
+            <!-- Loading Screen -->
+            <div id="loading-screen" class="screen hidden">
+                <div class="loader"></div>
+                <p>Loading questions...</p>
+            </div>
+
+            <!-- Error Screen -->
+            <div id="error-screen" class="screen hidden">
+                <h2>Oops! Something went wrong</h2>
+                <p id="error-message">Unable to load quiz questions.</p>
+                <button id="retry-btn" class="btn btn-primary">Try Again</button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="quiz-footer">
+            <p>CSC4035 Web Programming - Assignment 2</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript Files (loaded in order) -->
+    <script src="js/questions.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

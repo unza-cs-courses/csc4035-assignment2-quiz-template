@@ -1,0 +1,134 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What does HTML stand for?",
+            "options": [
+                "Hyper Text Markup Language",
+                "High Tech Modern Language",
+                "Hyper Transfer Markup Language",
+                "Home Tool Markup Language"
+            ],
+            "correctAnswer": 0,
+            "category": "HTML",
+            "difficulty": "easy"
+        },
+        {
+            "id": 2,
+            "question": "Which HTML element is used to define the largest heading?",
+            "options": [
+                "<heading>",
+                "<h6>",
+                "<h1>",
+                "<head>"
+            ],
+            "correctAnswer": 2,
+            "category": "HTML",
+            "difficulty": "easy"
+        },
+        {
+            "id": 3,
+            "question": "What does CSS stand for?",
+            "options": [
+                "Computer Style Sheets",
+                "Creative Style Sheets",
+                "Cascading Style Sheets",
+                "Colorful Style Sheets"
+            ],
+            "correctAnswer": 2,
+            "category": "CSS",
+            "difficulty": "easy"
+        },
+        {
+            "id": 4,
+            "question": "Which CSS property is used to change the text color of an element?",
+            "options": [
+                "text-color",
+                "font-color",
+                "color",
+                "text-style"
+            ],
+            "correctAnswer": 2,
+            "category": "CSS",
+            "difficulty": "easy"
+        },
+        {
+            "id": 5,
+            "question": "Which JavaScript keyword is used to declare a constant variable?",
+            "options": [
+                "var",
+                "let",
+                "const",
+                "constant"
+            ],
+            "correctAnswer": 2,
+            "category": "JavaScript",
+            "difficulty": "easy"
+        },
+        {
+            "id": 6,
+            "question": "What is the correct way to write a JavaScript array?",
+            "options": [
+                "var colors = 'red', 'green', 'blue'",
+                "var colors = ['red', 'green', 'blue']",
+                "var colors = (1:'red', 2:'green', 3:'blue')",
+                "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+            ],
+            "correctAnswer": 1,
+            "category": "JavaScript",
+            "difficulty": "easy"
+        },
+        {
+            "id": 7,
+            "question": "Which CSS property is used to create space between elements' borders and content?",
+            "options": [
+                "margin",
+                "padding",
+                "border-spacing",
+                "spacing"
+            ],
+            "correctAnswer": 1,
+            "category": "CSS",
+            "difficulty": "medium"
+        },
+        {
+            "id": 8,
+            "question": "What is the purpose of the 'async' keyword in JavaScript?",
+            "options": [
+                "To make a function run faster",
+                "To declare a function that returns a Promise",
+                "To pause function execution",
+                "To make synchronous code"
+            ],
+            "correctAnswer": 1,
+            "category": "JavaScript",
+            "difficulty": "medium"
+        },
+        {
+            "id": 9,
+            "question": "Which HTML5 element is used for navigation links?",
+            "options": [
+                "<navigation>",
+                "<nav>",
+                "<navigate>",
+                "<menu>"
+            ],
+            "correctAnswer": 1,
+            "category": "HTML",
+            "difficulty": "easy"
+        },
+        {
+            "id": 10,
+            "question": "What is the correct CSS syntax for making all <p> elements bold?",
+            "options": [
+                "p {font-weight: bold;}",
+                "<p style='font-size: bold;'>",
+                "p {text-size: bold;}",
+                "p.all {font-weight: bold;}"
+            ],
+            "correctAnswer": 0,
+            "category": "CSS",
+            "difficulty": "easy"
+        }
+    ]
+}

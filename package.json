@@ -1,0 +1,17 @@
+{
+  "name": "csc4035-assignment2-quiz",
+  "version": "1.0.0",
+  "description": "Assignment 2: Interactive Quiz Application - CSC4035 Web Programming",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "node tests/visible/tests.js",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "javascript",
+    "quiz",
+    "dom-manipulation",
+    "csc4035"
+  ],
+  "license": "MIT"
+}
